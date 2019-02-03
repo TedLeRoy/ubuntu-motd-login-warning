@@ -1,5 +1,5 @@
 # ubuntu-motd-login-warning
-A bash script display a Message of the Day (motd) warning when a user successfully connects over Secure Shell (SSH).
+A shell script to display a Message of the Day (motd) warning when a user successfully connects over Secure Shell (SSH).
 
 ## Background
 
@@ -19,7 +19,7 @@ A few caveats:
 * The script should do what it does and display output to standard output.
 * The script must be executable, as with any script. `sudo chmod + x your-script-name`
 * The script should display a blank line at the beginning of its output. `echo`
-* The script should have a end with a newline character. 
+* The script should end with a newline character. 
 * The script should run quickly or cache its output. 
 * The script filename should be preceded by a two digit number.
 * The file name should not have any file extension.
@@ -50,7 +50,7 @@ This can be useful for a legal warning telling would-be bad guys the system is n
 
 ## What It Does
 
-If you follow the instructions provided and copy the file `96-access-warning` to the `/etc/update-motd.d/` directory, the following message will be displayed, along with the other default messages, when a user logs in to your server:
+If you follow the instructions provided and copy the file `96-access-warning` to the `/etc/update-motd.d/` directory then set it executable, the following message will be displayed, along with the other default messages when a user logs in to your server:
 
 ```
 
@@ -83,7 +83,7 @@ appropriate law enforcement agencies.
 
 ```
 
-If you like the way Authorized Access Only is displayed, it's called ascii art, and you can create your own message for free [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
+If you like the way "Authorized Access Only!" is displayed, it's called ascii art, and you can create your own message for free [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
 
 ## Prerequisites
 
@@ -121,6 +121,7 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 * Thanks to the open source community for keeping the information flowing freely!
 * I did find the warning message contained in the script that said it was OK to use, but sadly don't remember where I found it. Thanks to whoever wrote it!
+* Thanks to Patrick Gillespie a.k.a. patorjk for the cool [ascii art site](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
 
 ## Built With
 
