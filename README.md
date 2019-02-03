@@ -118,9 +118,9 @@ This project is licensed under the GNU General Public License - see the [LICENSE
 
 ## Acknowledgements
 
-* Thanks to the open source community for keeping the information flowing freely!
-* I did find the warning message contained in the script that said it was OK to use, but sadly don't remember where I found it. Thanks to whoever wrote it!
 * Thanks to Patrick Gillespie a.k.a. patorjk for the cool [ascii art site](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
+* I did find the warning message contained in the script that said it was OK to use, but sadly don't remember where I found it. Thanks to whoever wrote it!
+* Thanks to the open source community for keeping the information flowing freely!
 
 ## Built With
 
