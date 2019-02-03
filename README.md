@@ -83,6 +83,8 @@ appropriate law enforcement agencies.
 
 ```
 
+If you like the way Authorized Access Only is displayed, it's called ascii art, and you can create your own message for free [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
+
 ## Prerequisites
 
 There are no prerequisites to achieve before adding this warning banner to your motd files.
