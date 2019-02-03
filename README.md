@@ -26,18 +26,6 @@ A few caveats:
 
 See the man page entry for `update-motd` for details. `man update-motd`
 
-### [NOTE] When you see the stuff in the file that looks like this:
-
-```
-export TERM=xterm-256color
-red=$( tput setaf 1 );
-normal=$( tput sgr 0);
-```
-That's used to set the color of the output to red, then set it back to "normal" whatever that is for your system.
-
-More information about using colors in your scripts can be found [here](https://unix.stackexchange.com/questions/139056/how-do-i-use-colors-in-the-motd).
-
-
 ## [Project Goal](#project-goal)
 
 Demonstrate how to add a file to present your own motd message and provide a sample file for you to use.
@@ -98,6 +86,17 @@ It is helpful if you understand how `sudo` permissions work.
 Read and understand the content of the `96-access-warning` file. Once you're satisfied that it won't cause harm, copy it into your /etc/update-motd.d directory. You can either download it directly to your server or just type `sudo vim 96-access-warning` (substitute vim with nano if you prefer) from within the `/etc/update-motd.d/` directory hit `i` for insert if using vim, and paste the content into the file.
 
 Once the file is in your `/etc/update-motd.d/` directory, make it executable by typing `sudo chmod +x 96-access-warning`.
+
+### [NOTE] When you see the stuff in the file that looks like this:
+
+```
+export TERM=xterm-256color
+red=$( tput setaf 1 );
+normal=$( tput sgr 0);
+```
+That's used to set the color of the output to red, then set it back to "normal" whatever that is for your system.
+
+More information about using colors in your scripts can be found [here](https://unix.stackexchange.com/questions/139056/how-do-i-use-colors-in-the-motd).
 
 ## Usage
 
