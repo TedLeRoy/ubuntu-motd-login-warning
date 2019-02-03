@@ -26,6 +26,18 @@ A few caveats:
 
 See the man page entry for `update-motd` for details. `man update-motd`
 
+### [NOTE] When you see the stuff in the file that looks like this:
+
+```
+export TERM=xterm-256color
+red=$( tput setaf 1 );
+normal=$( tput sgr 0);
+```
+That's used to set the color of the output to red, then set it back to "normal" whatever that is for your system.
+
+More information about using colors in your scripts can be found [here](https://unix.stackexchange.com/questions/139056/how-do-i-use-colors-in-the-motd).
+
+
 ## [Project Goal](#project-goal)
 
 Demonstrate how to add a file to present your own motd message and provide a sample file for you to use.
@@ -94,7 +106,6 @@ Just log in using SSH and see your new banner. If you prefer it be earlier or la
 Just do a `git pull` to update to the latest version if you're using this in your own git repository, or update the content in the `96-access-warning` file. 
 
 You can change the content to anything you'd like to see at login, but I encourage you to change the file name to something that makes sense for what is displayed should you choose to do this.
-
 
 ## Author
 
